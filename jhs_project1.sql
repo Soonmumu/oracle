@@ -1,9 +1,9 @@
 create table parking_info (
     c_num   varchar2(30 char),
-    c_entra date,
+    c_entra number(38,0),
     c_nredu number(3,0),
-    c_exit  date,
-    c_ptime timestamp,
+    c_exit  number(38,0),
+    c_ptime number(38,0),
     c_pfee  number(10, 0),
     
     constraint pk_c_num primary key (c_num),
