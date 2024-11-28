@@ -35,7 +35,7 @@ create table parking_area (
     
     constraint pk_p_area primary key (p_area),
     constraint ck_p_check check (p_check between 0 and 1),
-    constraint fk_c_num foreign key (c_num) references parking_info (c_num)
+    constraint uq_c_num unique (c_num)
 );
 
 insert into parking_area (p_area) values ('1f01');
